@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "AI Meeting Recorder",
+  "version": "1.0",
+  "description": "Records Google Meet audio and sends it to backend for transcription.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content_inject.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

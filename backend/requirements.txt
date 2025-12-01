@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-multipart
+openai-whisper
+ffmpeg-python
+sentence-transformers
+transformers
+hdbscan
+umap-learn
+yake
+python-dotenv
+requests
